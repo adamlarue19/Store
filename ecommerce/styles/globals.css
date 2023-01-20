@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap");
+
+:root {
+    --green: #06e9d2;
+    --orange: #ed792f;
+    --purple: #9d55bd;
+  }
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbf9f7;
+}
+
+
+/* *****Banner***** */
+.Hero {
+    padding: 100px 40px;
+    background-color: #fbf9f7;
+    border-radius: 15px;
+    position: relative;
+    height: 800px;
+    line-height: 0.9; 
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding: 0%;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+
+.hero-header {
+    font-family: 'Unbounded', cursive;
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    
+}
+
+.herospan1{
+    color: var(--green);
+}
+
+.herospan2{
+    color: var(--orange);
+}
+
+.deals{
+    font-family: 'Unbounded', cursive;
+    font-size: 3rem;
+    
+}
+.hero-descrp{
+    font-size: 2.5vh;
+}
+
+.shop-btn{
+    height: 2.8rem;
+    width: 8.5rem;
+    background-color: var(--green);
+    border-color: var(--green);
+    border-style: solid;
+    border-radius: 6px;
+    margin-top: 1rem;
+    
+}
+
+.shop-btn:hover{
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+
+.custom-img {
+    background-image: url(../img/nikeshoe1.png);
+    background-size: contain;
+    background-position:top;
+   background-repeat:no-repeat;
+   width: 42rem;
+    height: 120%;
+    padding: 0%;
+    
+}
