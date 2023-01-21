@@ -4,23 +4,54 @@
     --green: #06e9d2;
     --orange: #ed792f;
     --purple: #9d55bd;
+    --background:#fbf9f7;
   }
+
+html{
+    padding: 0;
+    margin: 0;
+    background-color: var(--background);
+}
+
+body{
+    font-family: 'Unbounded', cursive;
+}
+
+
 
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fbf9f7;
+    color: var(--orange);
+   
+}
+
+.logo {
+   
+    padding-left: 2rem;
+}
+
+.nav-items {
+  
+    font-size: 1.3rem;
+    width:20rem;
+    display: flex;
+    justify-content:space-between;
+    padding-right: 15rem;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.cart {
+    padding-right: 2rem;
 }
 
 
 /* *****Banner***** */
 .Hero {
-    padding: 100px 40px;
-    background-color: #fbf9f7;
-    border-radius: 15px;
-    position: relative;
     height: 800px;
     line-height: 0.9; 
     width: 100%;
@@ -38,7 +69,6 @@
 }
 
 .hero-header {
-    font-family: 'Unbounded', cursive;
     font-size: 4rem;
     justify-content: center;
     align-items: center;
@@ -55,12 +85,11 @@
 }
 
 .deals{
-    font-family: 'Unbounded', cursive;
     font-size: 3rem;
     
 }
 .hero-descrp{
-    font-size: 2.5vh;
+    font-size: 1rem;
 }
 
 .shop-btn{
@@ -90,3 +119,32 @@
     padding: 0%;
     
 }
+
+.men-section{
+    display: flex;
+    justify-content: center;
+}
+
+.men-header {
+    font-size: 1.5rem;
+}
+
+@media all and (max-width: 1200px) {
+    .custom-img {
+        height: 50%;
+        
+    }
+    .Hero {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-left {
+        align-items: center;
+    }
+    .deals {
+        align-self: flex-start;
+    }
+
+}
+
