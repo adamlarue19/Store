@@ -37,7 +37,6 @@ body {
 }
 
 .logo {
-
     padding-left: 2rem;
 }
 
@@ -50,11 +49,13 @@ body {
     padding-right: 15rem;
     text-decoration: none;
     list-style-type: none;
+    cursor: pointer;
 
 }
 
 .cart {
     padding-right: 2rem;
+    cursor: pointer;
 }
 
 
@@ -105,17 +106,21 @@ body {
 .shop-btn {
     height: 2.8rem;
     width: 8.5rem;
-    background-color: var(--green);
-    border-color: var(--green);
+    background: linear-gradient(90.21deg, var(--green) -5.91%, var(--orange) 111.58%);
+    border-color: #fff;
     border-style: solid;
     border-radius: 6px;
     margin-top: 1rem;
+    cursor: pointer;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
 
 }
 
 .shop-btn:hover {
     background-color: var(--orange);
-    border-color: var(--orange);
+    border-color: #fff;
+    transform: scale(1.1, 1.1)
 }
 
 
@@ -185,6 +190,8 @@ body {
 /* *** News Letter *** */
 
 .newsletter-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     height: 15rem;
     padding: 4rem;
@@ -194,12 +201,53 @@ body {
     padding: 1.2rem;
 }
 
+.input-container{
+    position: relative;
+}
+
+.submit {
+   justify-items: center;
+   align-self: center;
+   width: 7rem;
+   height: 3rem;
+   padding: 1rem;
+   margin-top: 1rem;
+   background: linear-gradient(90.21deg, var(--green) -5.91%, var(--orange) 111.58%);
+   border-radius: 10px;
+   border-color: rgb(219, 206, 206);
+   cursor: pointer;
+   transform: scale(1, 1);
+    transition: transform 0.5s ease;
+}
+
+.submit:hover{
+    opacity: .70;
+    background: linear-gradient(90.21deg, var(--green) -5.91%, var(--orange) 111.58%);
+    transform: scale(1.1, 1.1)
+}
+
 .newsletter-input{
     width: 20rem;
     height: 2rem;
     padding: .2rem;
     
+}
+
+/* *** Footer *** */
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    background: linear-gradient(90.21deg, var(--green) -5.91%, var(--orange) 111.58%);
+    padding: 2rem;
     
+}
+
+.footer-container > div {
+  margin-top: 2rem;
 }
 
 @media all and (max-width: 1200px) {

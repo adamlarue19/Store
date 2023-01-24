@@ -4,6 +4,7 @@ import NavBar from '@/components/NavBar'
 import ShoeSection from '@/components/ShoeSection'
 import Shoe from '@/components/Shoe'
 import Kid from '@/components/Kid'
+import Footer from '@/components/Footer'
 
 import { client } from '../lib/client'
 import NewsLetter from '@/components/NewsLetter'
@@ -35,6 +36,7 @@ const Home = ({ products, shoes, kids }) => {
         </div>
 
         <NewsLetter />
+        <Footer />
 
 
 
