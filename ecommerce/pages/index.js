@@ -13,7 +13,7 @@ import NewsLetter from '@/components/NewsLetter'
 const Home = ({ products, shoes, kids }) => {
   return (
     <>
-      <NavBar />
+      
       <HeroBanner />
       <div className='shoe-section'>
       <h2 className='section-title'>Men</h2>
@@ -36,21 +36,14 @@ const Home = ({ products, shoes, kids }) => {
         </div>
 
         <NewsLetter />
-        <Footer />
-
-
-
-
-
-
-
+       
     </>
   )
 }
 
 export const getServerSideProps = async () => {
-  const query = '*[_type == "product"]';
-  const products = await client.fetch(query);
+  const productQuery = '*[_type == "product"]';
+  const products = await client.fetch(productQuery);
 
   const shoeQuery = '*[_type == "shoe"]';
   const shoes = await client.fetch(shoeQuery);

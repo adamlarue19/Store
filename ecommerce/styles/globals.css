@@ -190,6 +190,10 @@ body {
 /* *** News Letter *** */
 
 .newsletter-container {
+    background-image: url(../img/many-nike-flipped.JPG);
+    background-size: cover;
+    background-position: center;
+/* background-repeat: no-repeat; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -197,6 +201,8 @@ body {
     padding: 4rem;
     background-color: var(--background);
 }
+
+
 .newsletter-text{
     padding: 1.2rem;
 }
@@ -221,7 +227,7 @@ body {
 }
 
 .submit:hover{
-    opacity: .70;
+    /* opacity: .70; */
     background: linear-gradient(90.21deg, var(--green) -5.91%, var(--orange) 111.58%);
     transform: scale(1.1, 1.1)
 }
