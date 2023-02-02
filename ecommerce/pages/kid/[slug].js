@@ -1,31 +1,36 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
 import { client, urlFor } from '../../lib/client';
 import  Kid  from '../../components/Kid'
-
+import {useStateContext} from '../../context/StateContext'
 
 const KidDetails = ({ kid, kids, }) => {
 
   const { image, name, details, price } = kid;
+  const [index, setIndex] = useState(0);
+  const {decQty, incQty, qty, onAdd } = useStateContext();
+
 
   return (
     <div>
       <div className='product-detail-container'>
         <div>
           <div className='product-detail-imge'>
-            <img src={urlFor(image && image[0])} />
+          <img src={urlFor(image && image[index])} />
           </div>
-          {/* <div className='small-images'>
+          <div className='small-images'>
           {image?.map((item, i) => (
             <img
               src={urlFor(item)}
-              className=''
-              onMouseEnter=''
+              className={i === index ?
+              'small-image selected-image' :
+              'small-image'}
+              onMouseEnter={() => setIndex(i)}
             />
           ))}
-        </div> */}
+        </div>
         </div>
         <div className='product-details-desc'>
           <h1>{name}</h1>
@@ -47,19 +52,19 @@ const KidDetails = ({ kid, kids, }) => {
           <div className='quantity'>
             <h3>Quantity: </h3>
             <p className='quantity-desc'>
-              <span className='minus'
-              onClick=''><AiOutlineMinus />
+            <span className='minus'
+              onClick={decQty}><AiOutlineMinus />
               </span>
               <span className='num'
-              onClick=''>0</span>
+              onClick=''>{qty}</span>
               <span className='plus'
-              onClick=''><AiOutlinePlus /> 
+              onClick={incQty}><AiOutlinePlus /> 
               </span>
             </p>
           </div>
           <div className='buttons'>
             <button type='button' className='add-to-cart'
-            onClick=''>Add to Cart</button>
+          onClick={() => onAdd(kid, qty)}>Add to Cart</button>
             <button type='button' className='buy-now' onClick=''>
               Buy Now </button>
           </div>
