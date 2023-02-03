@@ -16,7 +16,7 @@ const ProductDetails = ({product, products }) => {
     <div>
       <div className='product-detail-container'>
         <div>
-          <div className='product-detail-imge'>
+          <div className='product-detail-image'>
             <img src={urlFor(image && image[index])} />
           </div>
           <div className='small-images'>
@@ -69,7 +69,7 @@ const ProductDetails = ({product, products }) => {
           </div>
         </div>
       </div>
-      <div className='maylike-products-products-wrapper'>
+      <div className='maylike-products-wrapper'>
         <h2>You may also like</h2>
         <div className='marquee'>
           <div className=' maylike-products-container track'>
