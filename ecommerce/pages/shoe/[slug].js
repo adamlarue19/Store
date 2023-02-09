@@ -5,12 +5,19 @@ import { client, urlFor } from '../../lib/client';
 import {useStateContext} from '../../context/StateContext'
 import Shoe from '../../components/Shoe'
 
+
+// shoe is the womens shoes
 const ShoeDetails = ({ shoe, shoes}) => {
 
     const {image, name, details, price} = shoe;
     const [index, setIndex] = useState(0);
-    const {decQty, incQty, qty, onAdd } = useStateContext();
+    const {decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
+    const handleBuyNow = () => {
+      onAdd(product, qty);
+
+      setShowCart(true);
+    }
 
   return (
     <div>
@@ -54,8 +61,7 @@ const ShoeDetails = ({ shoe, shoes}) => {
             <span className='minus'
             onClick={decQty}><AiOutlineMinus />
             </span>
-            <span className='num'
-            onClick=''>{qty}</span>
+            <span className='num'>{qty}</span>
             <span className='plus'
             onClick={incQty}><AiOutlinePlus /> 
             </span>
@@ -64,12 +70,12 @@ const ShoeDetails = ({ shoe, shoes}) => {
         <div className='buttons'>
           <button type='button' className='add-to-cart'
            onClick={() => onAdd(shoe, qty)}>Add to Cart</button>
-          <button type='button' className='buy-now' onClick=''>
+          <button type='button' className='buy-now' onClick={handleBuyNow}>
             Buy Now </button>
         </div>
       </div>
     </div>
-    <div className='maylike-products-products-wrapper'>
+    <div className='maylike-products-wrapper'>
       <h2>You may also like</h2>
       <div className='marquee'>
         <div className=' maylike-products-container track'>

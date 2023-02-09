@@ -1,10 +1,9 @@
 import React from 'react'
 import HeroBanner from '@/components/HeroBanner'
-import NavBar from '@/components/NavBar'
 import ShoeSection from '@/components/ShoeSection'
 import Shoe from '@/components/Shoe'
 import Kid from '@/components/Kid'
-import Footer from '@/components/Footer'
+
 
 import { client } from '../lib/client'
 import NewsLetter from '@/components/NewsLetter'

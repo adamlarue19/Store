@@ -18,7 +18,7 @@ const Footer = () => {
                 <FaTiktok size={50} />
 
             </div>
-
+<p>2023 SHOE STORE All rights reserved</p>
         </div>
 
 

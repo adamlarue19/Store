@@ -1,4 +1,5 @@
 import React from 'react'
+import ShoeSection from './ShoeSection'
 
 
 
@@ -10,7 +11,7 @@ const HeroBanner = () => {
         <h3 className='deals'>2023 Sale</h3>
         
         <p className='hero-descrp'>New Year, New Shoes: Save up to 50% on our top styles during our annual sale.</p>
-        <button className='shop-btn'>Shop now</button>
+        <button onClick={ShoeSection} className='shop-btn'>Shop now</button>
       </div>
 
 
