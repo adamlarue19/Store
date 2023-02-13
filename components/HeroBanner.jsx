@@ -1,5 +1,4 @@
 import React from 'react'
-import ShoeSection from './ShoeSection'
 import { Link }  from 'react-scroll/modules'
 
 
