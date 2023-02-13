@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link }  from 'react-scroll/modules'
-
+import Image from 'next/image'
+import NikeShoe from '../img/nikeshoe1'
 
 
 const HeroBanner = () => {
@@ -19,8 +20,12 @@ const HeroBanner = () => {
 
 
       <div className='custom-img'>
+       <Image
+          src={NikeShoe}
+          alt='image of a shoe'
+        />
 
-      </div>
+        </div>
 
     </div>
   )
