@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link }  from 'react-scroll/modules'
 import Image from 'next/image'
-import NikeShoe from '../img/nikeshoe1'
+import NikeShoe from '../img/nikeshoe1.png'
 
 
 const HeroBanner = () => {
