@@ -14,20 +14,20 @@ const Home = ({ products, shoes, kids }) => {
     <>
       
       <HeroBanner />
-      <div className='shoe-section'>
+      <div id='mens' className='shoe-section'>
       <h2 className='section-title'>Men</h2>
       <div className='shoe-container'>
         {products?.map((product) => <ShoeSection key={product._id} product={product} />)}
       </div>
       </div>
 
-      <div className='shoe-section'>
+      <div id='womens' className='shoe-section'>
       <h2 className='section-title'> Women</h2>
       <div className='shoe-container'>
         {shoes?.map((shoe) => <Shoe key={shoe._id} shoe={shoe} />)}
       </div>
       </div>
-      <div className='shoe-section'>
+      <div id='kids' className='shoe-section'>
       <h2 className='section-title'> Kids</h2>
       <div className='shoe-container'>
         {kids?.map((kid) => <Kid key={kid._id} kid={kid} />)}

@@ -1,5 +1,6 @@
 import React from 'react'
 import ShoeSection from './ShoeSection'
+import { Link }  from 'react-scroll/modules'
 
 
 
@@ -11,7 +12,10 @@ const HeroBanner = () => {
         <h3 className='deals'>2023 Sale</h3>
         
         <p className='hero-descrp'>New Year, New Shoes: Save up to 50% on our top styles during our annual sale.</p>
-        <button onClick={ShoeSection} className='shop-btn'>Shop now</button>
+        
+        <Link activeClass="active" to="mens" spy={true} smooth={true} offset={50} duration={500}>
+          <button  className='shop-btn'>Shop now</button> 
+        </Link>
       </div>
 
 

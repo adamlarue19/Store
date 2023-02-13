@@ -38,6 +38,11 @@ body {
     padding-left: 2rem;
 }
 
+.logo > a {
+  text-decoration: none;
+  color: black;
+}
+
 .nav-items {
 
     font-size: 1rem;
@@ -559,10 +564,10 @@ padding: 30px 65px;
     color: #f02d34;
   }
   .marquee {
-    position: relative;
     height: 400px;
     width: 100%;
     overflow-x: hidden;
+    margin-bottom: 65px;
   }
   
   .track {

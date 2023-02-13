@@ -14,7 +14,7 @@ const KidDetails = ({ kid, kids, }) => {
   const {decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
   const handleBuyNow = () => {
-    onAdd(product, qty);
+    onAdd(kid, qty);
 
     setShowCart(true);
   }

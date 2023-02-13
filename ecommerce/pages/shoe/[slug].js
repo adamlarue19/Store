@@ -14,7 +14,7 @@ const ShoeDetails = ({ shoe, shoes}) => {
     const {decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
     const handleBuyNow = () => {
-      onAdd(product, qty);
+      onAdd(shoe, qty);
 
       setShowCart(true);
     }
