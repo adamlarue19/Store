@@ -19,8 +19,9 @@ const HeroBanner = () => {
       </div>
 
 
-      <div className='custom-img'>
-       <Image 
+      <div>
+       <Image
+       className='custom-img'
        width='750'
        height='700'
           src={NikeShoe}
