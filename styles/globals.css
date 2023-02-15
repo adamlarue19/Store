@@ -270,13 +270,13 @@ padding: 30px 65px;
 
 
 .custom-img {
-    background-image: url(../img/nikeshoe1.png);
-    background-size: contain;
+    /* background-image: url(../img/nikeshoe1.png);  */
+     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    width: 45rem;
-    height: 91%;
-    /* margin-top: 4rem; */
+    /* width: 40rem; */
+    height: 91%; 
+    margin-top: 2rem;
 
 
 }
@@ -335,7 +335,6 @@ padding: 30px 65px;
 /* *** News Letter *** */
 
 .newsletter-container {
-    background-image: url(../img/many-nike2\ \(2\).jpg);
     background-size: cover;
     background-position: center;
 /* background-repeat: no-repeat; */
