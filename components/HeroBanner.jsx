@@ -21,7 +21,8 @@ const HeroBanner = () => {
 
       <div className='custom-img'>
        <Image 
-      
+       width='750'
+       height='700'
           src={NikeShoe}
           alt='image of a shoe'
         />

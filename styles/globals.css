@@ -335,9 +335,7 @@ padding: 30px 65px;
 /* *** News Letter *** */
 
 .newsletter-container {
-    background-size: cover;
-    background-position: center;
-/* background-repeat: no-repeat; */
+  position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -345,9 +343,15 @@ padding: 30px 65px;
     padding: 4rem;
     background-color: var(--background);
 }
+ 
 
+ .newsletter-title {
+  position: relative;
+  
+ }
 
 .newsletter-text{
+  position: relative;
     padding: 1.2rem;
 }
 
