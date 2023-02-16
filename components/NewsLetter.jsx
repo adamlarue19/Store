@@ -6,7 +6,7 @@ const NewsLetter = () => {
         <>  
         
         <div className='newsletter-container'>
-            <Image  src={newsLetterBg} layout='fill' objectFit='cover'  alt='many nike shoes'></Image>
+            <Image className='newsletter-img'  src={newsLetterBg} layout='fill' objectFit='cover'  alt='many nike shoes'></Image>
                 <h1 className='newsletter-title'> Join our News Letter Today</h1>
                 <p className='newsletter-text'> Subscribe to our newsletter to stay up to date on all of our sales and promtions, as well as new realses!</p>
                 

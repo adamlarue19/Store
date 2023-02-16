@@ -16,8 +16,8 @@ const NavBar = () => {
       <h1 className='logo'>
         <a href='/' >SHOE STORE</a>
       </h1>
+     
       <ul className='nav-items'>
-
         <Link activeClass="active" to="mens" spy={true} smooth={true} offset={50} duration={500}>
           Men
         </Link>

@@ -19,7 +19,7 @@ const HeroBanner = () => {
       </div>
 
 
-      <div>
+      <div className='custom-img'>
        <Image
        className='custom-img'
        width='750'
