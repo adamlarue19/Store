@@ -22,11 +22,11 @@ const ShoeDetails = ({ shoe, shoes}) => {
   return (
     <div>
     <div className='product-detail-container'>
-      <div>
-        <div className='product-detail-imge'>
+   
+        <div className='product-detail-image'>
         <img src={urlFor(image && image[index])} />
           </div>
-          <div className='small-images'>
+          <div className='small-images-container'>
           {image?.map((item, i) => (
             <img
               src={urlFor(item)}
@@ -37,7 +37,7 @@ const ShoeDetails = ({ shoe, shoes}) => {
             />
           ))}
       </div>
-      </div>
+
       <div className='product-details-desc'>
         <h1>{name}</h1>
         <div className='reviews'>
